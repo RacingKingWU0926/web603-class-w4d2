@@ -2,23 +2,28 @@
 <html>
 <body>
 
-<p>We will delete object properties with the delete keyword.</p>
+  <p>We will delete object properties with the delete keyword.</p>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<script>
-var person = {
-  firstname: "West",
-  lastname: "Cliff",
-  age: 80,
-  eyecolor: "blue"
-};
+  <script>
+    var person = {
+      firstname: "West",
+      lastname: "Cliff",
+      age: 80,
+      eyecolor: "blue"
+    };
 
-// add document code here
+    // add delete-age below;
+    // delete person.age;
 
+    // add document code here
+    document.getElementById("demo").innerHTML = `${person.firstname} is ${person.age} years old.`;
 
+    // add delete-age after;
+    delete person.age;
 
-</script>
+  </script>
 
 </body>
 </html>
